@@ -2,7 +2,7 @@
 
 Information Security undergraduate at Donghua University, Shanghai.
 
-I work on local LLM systems, evaluation tooling, small software products, and games. I usually keep the engineering notes, test protocols, and release artifacts that mattered while building them.
+I work on local LLM systems, evaluation tooling, small software products, and games. I keep the engineering notes, test protocols, reproduction evidence, and release artifacts that mattered while building them.
 
 ## Selected work
 
@@ -24,9 +24,15 @@ A living benchmark for comparing local LLMs under frozen, reproducible reasoning
 
 The evaluation workflow includes fixed test sets, blind judging, score locking, and reproducible experiment records.
 
-## Open source
+## Upstream work
 
-I also spend time tracing local-inference problems into upstream projects.
+I also spend time reproducing local-inference failures, tracing them into upstream projects, and validating fixes.
+
+**MiniCPM-V**  
+[#1153](https://github.com/OpenBMB/MiniCPM-V/issues/1153) ·
+[validation](https://github.com/OpenBMB/MiniCPM-V/issues/1153#issuecomment-6383346201)
+
+Reported a MiniCPM-V 4.7 GGUF/chat-template failure and verified the updated official artifact across 36 recorded runs with no recurrence.
 
 **FreeToken**  
 [#131](https://github.com/FlashML-org/FreeToken/pull/131) ·
@@ -36,7 +42,7 @@ I also spend time tracing local-inference problems into upstream projects.
 **Hermes Agent**  
 [#96360](https://github.com/NousResearch/hermes-agent/issues/96360)
 
-Most of this work has been around GGUF inference, long prompts, MoE behavior, runtime edge cases, and debugging issues that only become obvious under real workloads.
+Most of this work has been around GGUF inference, long prompts, MoE behavior, chat templates, Windows runtime edge cases, and reproducible validation.
 
 ## Other work
 
